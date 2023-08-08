@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load my_extras %}
+ {% block body_block %}
+    <h1> Welcome to index </h1>
+    {% comment %} <h2> This is index.html page showing </h2> {% endcomment %}
+    {% comment %} <h3>{{text|upper}}</h3> {% endcomment %}
+    <h3>{{text|takeoff:'Hello'}}</h3>
+    <h3>{{number|add:"99"}}</h3>
+ {% endblock %}
+     
+        
